@@ -1,3 +1,46 @@
-Link para download do Git: https://git-scm.com/download/win
+# GIT
 
-O Git Bash é um terminal estendido para otimizar o uso do Git.
+GIT é um sistema de controle de versões de código, uma ferramenta extremamente importante para o dia-a-dia do desenvolvedor.
+
+#### Entendendo como o GIT funciona
+
+**<u>SHA1</u>** - Significa Secure Hash Algorithm (Algoritmo de Hash Seguro), é um conjunto de funções hash criptográficas.
+
+É um algoritmo de encriptação.
+
+A encriptação gera conjunto de caracteres identificador de 40 dígitos.
+
+É uma forma curta de representar um arquivo.
+
+**comando:** openssl sha1 <*nome do arquivo*>
+
+**<u>Objetos internos</u>**
+
+1. Blobs - contém metadados do GIT (tipo do objeto, tamanho da String e conteúdo)
+2. Trees - armazena Blobs, monta toda a estrutura de onde estão localizados os arquivos. Podem apontar para outras árvores e Blob´s.
+3. Commit - é o objeto que vai juntar tudo, que dará sentindo par alteração. Ele aponta para uma tree, parente (último commit realizado antes dele), autor, mensagem.
+
+#### Chaves SSH e Tokens (Segurança GitHub)
+
+*SSH* - é uma forma de conexão segura e encriptada com 2 chaves (pública e provada).
+
+*Token de acesso pessoa*l -  ao invés de digitar uma senha é gerado um código numérico no GitHub.
+
+#### Comandos básicos GIT
+
+git init - cria um repositório local na pasta do projeto.
+
+git add <nome_arquivo> - adiciona arquivo selecionado.
+
+git add . - adiciona todos arquivos.
+
+git commit -m <mensagem> - salva todas alterações feitas na pasta local do projeto.
+
+git status - exibe no terminal o estado dos arquivos.
+
+git clone - clona um repositório remoto no seu computador. 
+
+git push origin master - enviar repositório para o GitHub.
+
+
+
